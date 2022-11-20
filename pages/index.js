@@ -1,13 +1,13 @@
 import Header from "../components/header";
-import AboutMe from "../components/about-me";
+import SectionAbout from "../components/section_about";
+import SectionProjects from "../components/section_projects";
 
 const index = () => {
     return(
         <>
             <Header />
-            <div className="grid grid-cols-1 h-screen place-items-center">
-                <AboutMe />
-            </div>
+            <SectionAbout />
+            <SectionProjects />
         </>
     )
 }

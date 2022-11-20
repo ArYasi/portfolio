@@ -10,25 +10,24 @@ const Header = () => {
     });
     
     return(
-        <div className="flex justify-center">
-            <nav className="p-7 md:w-5/6 md:flex md:items-center md:justify-between border-green-300 border-4 rounded-lg m-5 shadow-[6px_6px_0px_0px_rgba(239,68,68)]">
-                <div>
-                    <span className="text-header text-white font-term">ARTUR YASINSKIY</span>
-                </div>
-
-                <ul className="md:flex md:items-center hidden">
-                    <li className="mx-4">
-                        <a href="#" className="font-term text-header text-white hover:text-green-300" ref={navEffect.ref}>ABOUT ME</a>
-                    </li>
-                    <li className="mx-4">
-                        <a href="#" className="font-term text-header text-white hover:text-green-300" ref={navEffect.ref}>PROJECTS</a>
-                    </li>
-                    <li className="mx-4">
-                        <a href="#" className="font-term text-header text-white hover:text-green-300" ref={navEffect.ref}>CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <>
+            <div className="bg-[url('../public/theme-wallpaper.jpg')] bg-no-repeat p-8 bg-bottom bg-cover">
+                <nav className="py-6">
+                    <ul className="hidden md:flex md:justify-end">
+                        <li className="mx-4">
+                            <a href="#about" className="font-term text-header text-white hover:text-green-300" ref={navEffect.ref}>ABOUT ME</a>
+                        </li>
+                        <li className="mx-4">
+                            <a href="#section-projects" className="font-term text-header text-white hover:text-green-300" ref={navEffect.ref}>PROJECTS</a>
+                        </li>
+                        <li className="mx-4">
+                            <a href="#" className="font-term text-header text-white hover:text-green-300" ref={navEffect.ref}>CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img className="rounded-full h-72 w-72 mx-auto object-cover shadow-2xl" src="/avatar.png" />
+            </div>
+        </>
     )
 }
 
