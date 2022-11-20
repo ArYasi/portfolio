@@ -1,13 +1,18 @@
 let SectionAbout = () => {
     return(
         <>
-            <div className="grid grid-cols-2" id="about">
+            <div className="grid md:grid-cols-2" id="about">
                 <div className="bg-white h-[20em] flex">
-                    <div className="m-14 font-semibold font-sans">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <div className="m-14">
+                        <p className="text-[1.25em] text-gray-800 my-5 font-medium">
+                            I am a hobbyist who works with servers, networks, and everything in between. I focus more into Cyber Security by learning how to lock down systems and networks. I am constantly learning new tools and programming techniques to make life a little bit easier. I have a goal in the future to be someone who can either secure your system or break into it, legally of course.
+                        </p>
+                        <footer className="indent-6 text-gray-600 font-light leading-relaxed">
+                            <cite>- "Scripting is my superpower. I automate everything in life."</cite>
+                        </footer>
                     </div>
                 </div>
-                <div className="bg-white h-[20em] flex">
+                <div className="bg-white h-[20em] flex md:inline hidden">
 
                 </div>
                 <div>
